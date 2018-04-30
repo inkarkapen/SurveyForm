@@ -1,0 +1,25 @@
+form{
+    margin: 5px;
+    width: 300px;
+}
+h4{
+    margin-top: 0px;
+    display: inline-block;
+}
+input{
+    float: right;
+    height: 20px;
+    border: 1px black solid;
+}
+textarea{
+    width: 290px;
+    height: 50px;
+}
+fieldset{
+    margin: 10px;
+    width: 300px;
+}
+#wrapper{
+    margin: 30px;
+    width: 300px;
+}

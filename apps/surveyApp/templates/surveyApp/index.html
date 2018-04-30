@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Take a Survey!</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'surveyApp/style.css' %}" media="screen" title="no title"  charset="utf-8">
+    </head>
+    <body>
+        <fieldset>
+        <form action = "/process" method = "post">
+            {% csrf_token %}
+            <br><h4>Your name:</h4> <input type="text" name="name"></br>
+            <br><h4>Dojo Location:</h4> <input type="text" name="location"></br>
+            <br><h4>Favorite Language:</h4> <input type="text" name="language"></br>
+            <h4>Comment (optional):</h4><br>
+            <textarea name = "comment">​</textarea>​</br>
+            <input type = "submit" value = "Submit">
+        </form>
+        </fieldset>
+    </body>
+</html>
